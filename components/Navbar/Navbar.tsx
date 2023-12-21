@@ -1,6 +1,11 @@
 "use client"
 import {
-  Button,
+  BriefcaseIcon,
+  EnvelopeIcon, 
+  HomeIcon,
+  UsersIcon,
+} from "@heroicons/react/24/outline"
+import {
   Navbar,
   NavbarBrand,
   NavbarContent,
@@ -9,10 +14,12 @@ import {
   NavbarMenuItem,
   NavbarMenuToggle,
 } from "@nextui-org/react"
+
 import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useState } from "react"
+
 
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean | undefined>(false)
@@ -23,21 +30,26 @@ export default function Nav() {
       label: "Home",
       href: "/",
       current: currentRoute === "/",
+      icon: <HomeIcon className="h-6 w-6"/>
     },
     {
       label: "Team",
       href: "/team",
       current: currentRoute === "/team",
+      icon: <UsersIcon className="h-6 w-6"/>
+
     },
     {
       label: "Services",
       href: "/services",
       current: currentRoute === "/services",
+      icon: <BriefcaseIcon className="h-6 w-6"/>
     },
     {
       label: "Contact",
       href: "/contact",
       current: currentRoute === "/contact",
+      icon: <EnvelopeIcon className="h-6 w-6"/>
     },
   ]
 
@@ -53,13 +65,16 @@ export default function Nav() {
         <NavbarMenuToggle className="absolute left-8 flex md:hidden" />
         <NavbarMenu>
           {menuItems.map((item) => (
-            <NavbarMenuItem key={item.href}>
+            <NavbarMenuItem key={item.href} className="text-left">
               <Link
                 href={item.href}
                 aria-current={item.current ? "page" : undefined}
                 onClick={() => setIsMenuOpen(false)}
               >
-                {item.label}
+                <div className="flex-row flex my-6 ml-2 space-x-3">
+                {item.icon}
+                <span>{item.label}</span>
+                </div>
               </Link>
             </NavbarMenuItem>
           ))}

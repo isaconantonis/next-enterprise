@@ -1,7 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 'use client'
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
-import { Mouse } from '@playwright/test';
 import Image from 'next/image';
 import React, { useState } from 'react';
 
@@ -51,7 +50,7 @@ const OfficeLightbox: React.FC = () => {
             src={image}
             alt={`Image ${index}`}
             onClick={() => openLightbox(image, index)}
-            className="cursor-pointer h-36 border rounded-lg border-primary-50"
+            className="cursor-pointer object-cover h-36 border rounded-lg border-primary-50"
             width={600}
             height={400}
           />

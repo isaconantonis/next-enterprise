@@ -1,29 +1,4 @@
-const people = [
-  {
-    name: "Sam Antonis",
-    role: "Lead Developer",
-    imageUrl: "/Sam.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/sam-antonis-296144186/",
-  },
-  {
-    name: "Nick Eliaerts",
-    role: "Junior Developer",
-    imageUrl:"/Nick.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/nick-eliaerts-76b8574a/",
-  },
-  {
-    name: "Britt Van Damme",
-    role: "Ecommerce Specialist",
-    imageUrl: "/Britt.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/britt-van-damme/",
-  },
-  {
-    name: "Silke Joosens",
-    role: "Designer",
-    imageUrl: "/Silke.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/silkejoosens/",
-  },
-]
+import people from '../../data/teamData'
 
 export default async function About() {
   return (
@@ -41,14 +16,14 @@ export default async function About() {
                 </p>
               </div>
               <ul
-                className="l mx-auto mt-8 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none  lg:grid-cols-4 lg:gap-8"
+                className="mx-auto mt-8 grid max-w-xs grid-cols-1 gap-6 sm:max-w-2xl sm:grid-cols-2 lg:mx-0 lg:max-w-none  lg:grid-cols-4 lg:gap-8"
               >
                 {people.map(({ name, imageUrl, role, linkedinUrl }) => (
                   <li key={name} className="rounded-2xl bg-primary-800 px-8 py-10">
-                    <img className="mx-auto h-48 w-48 rounded-full md:h-56 md:w-56" src={imageUrl} alt={name} />
+                    <img className="mx-auto object-contain h-48 w-48 rounded-full md:h-58 md:w-58" src={imageUrl} alt={name} />
                     <h3 className="mt-6 text-base font-semibold leading-7 tracking-tight text-primary-50">{name}</h3>
                     <p className="text-sm leading-6 text-primary-50">{role}</p>
-                    <ul role="list" className="mt-6 flex justify-center gap-x-6">
+                    <ul className="mt-6 flex justify-center gap-x-6">
                       <li>
                         <a href={linkedinUrl} className="text-primary-50 hover:text-primary-50">
                           <span className="sr-only">LinkedIn</span>

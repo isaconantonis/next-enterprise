@@ -40,7 +40,7 @@ export default async function Projects() {
               </div>
               <PricingPlans/>
               <div className="mx-auto mt-8 max-w-2xl sm:mt-20 lg:mt-14 lg:max-w-5xl">
-                <dl className="mx-auto grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+                <dl className="mx-auto grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none md:grid-cols-2 lg:gap-y-16">
                   {features.map((feature) => (
                     <div key={feature.name} className="relative flex flex-col">
                       <div className="mx-auto mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-primary-800">

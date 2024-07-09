@@ -21,7 +21,7 @@
         features: ['Custom design','No monthly fees','Domain included', 'Content Management System', 'E-commerce integration',],
         mostPopular: true,
         buttonText: 'Buy Plan',
-        previewAvailable: true,
+        previewAvailable: false,
         previewHref: '#',
       },
       {

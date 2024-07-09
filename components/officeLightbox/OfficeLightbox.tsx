@@ -57,11 +57,11 @@
       <div className='mt-4 flex'>
         <a href='/contact' className='text-sm font-semibold leading-6 text-primary-800 mx-8 mb-4'>Contact us for availability<span aria-hidden="true">→</span></a>
       </div>
-      <div className="relative mb-[806px]">
+      <div className="relative mb-[104vh] md:mb-[806px]">
             <video
             poster="/officeVid2Placeholder.png"
             id='bannerVideo'
-            className='absolute h-[800px] w-full object-cover md:rounded-lg'
+            className='absolute h-[100vh] md:h-[800px] w-full object-cover md:rounded-lg'
             controls
             >
               <source src={bannerMedia} type="video/mp4"/>

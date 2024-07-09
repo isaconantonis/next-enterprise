@@ -66,7 +66,7 @@ export default function PricingPlans() {
                   )}
                   <ul className="mt-8 space-y-3 text-sm leading-6 text-primary-50">
                     {tier.features.map((feature) => (
-                      <li key={feature} className="flex gap-x-2 text-nowrap h-full w-full">
+                      <li key={feature} className="flex gap-x-2 text-start h-full w-full">
                         <CheckIcon className="h-6 w-5 flex-none text-primary-50" aria-hidden="true" />
                         {feature}
                       </li>

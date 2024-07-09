@@ -79,9 +79,11 @@ export default function Contact() {
                   <BuildingOffice2Icon className="h-7 w-6 text-primary-800" aria-hidden="true" />
                 </dt>
                 <dd>
+                  <a className="hover:text-white" href="https://www.google.com/maps?q=kammenstraat+57+2000+Antwerpen" target="_blank" rel="noreferrer">
                   Kammenstraat 57
                   <br />
                   2000, Antwerpen
+                  </a>
                 </dd>
               </div>
               <div className="flex gap-x-4">
@@ -91,7 +93,7 @@ export default function Contact() {
                 </dt>
                 <dd>
                   <a className="hover:text-white" href="tel:+32496799751">
-                    +32496799751
+                    +32 496 79 97 51
                   </a>
                 </dd>
               </div>

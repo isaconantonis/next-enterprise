@@ -21,7 +21,6 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useState } from "react"
 
-
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean | undefined>(false)
   const currentRoute = usePathname()
@@ -77,7 +76,9 @@ export default function Nav() {
               <Link
                 href={item.href}
                 aria-current={item.current ? "page" : undefined}
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => {
+                  setIsMenuOpen(false);
+                }}
               >
                 <div className="flex-row flex my-6 ml-2 space-x-3">
                 {item.icon}

@@ -59,7 +59,7 @@
       </div>
       <div className="relative mb-[806px]">
             <video
-            poster="placeholder.png"
+            poster="/officeVid2Placeholder.png"
             id='bannerVideo'
             className='absolute h-[800px] w-full object-cover md:rounded-lg'
             controls

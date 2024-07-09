@@ -14,7 +14,7 @@ export default function PricingPlans() {
             <div className="mx-auto max-w-4xl text-center">
             </div>
             <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-primary-800">
-              Choose an affordable plan that is packed with the best features for engaging your audience, driving sales and expanding you prescence online.
+              Choose an affordable plan that is packed with the best features for engaging your audience, driving sales and expanding you presence online.
             </p>
               <div className="isolate mx-auto mt-10 grid grid-cols-1 gap-8 md:max-w-none lg:grid-cols-3 lg:max-w-4xl">
                 {pricing.tiers.map((tier) => (

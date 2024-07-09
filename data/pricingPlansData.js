@@ -9,7 +9,7 @@
         features: ['Custom design','No monthly fees', 'domain included'],
         mostPopular: false,
         buttonText: 'Buy Plan',
-        previewAvailable: true,
+        previewAvailable: false,
         previewHref: '#',
       },
       {

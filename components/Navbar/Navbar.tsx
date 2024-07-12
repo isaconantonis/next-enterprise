@@ -89,11 +89,15 @@ export default function Nav() {
           ))}
         </NavbarMenu>
         <NavbarBrand className="hidden md:flex">
+          <a href="/#">
           <Image src="/Isacon logo RGB_1.png" alt="Isacon" width={50} height={50} />
+          </a>
         </NavbarBrand>
         <NavbarContent className="w-full md:hidden" justify="center">
           <NavbarBrand className="justify-center md:hidden">
+            <a href="/#">
             <Image src="/Isacon logo RGB_1.png" alt="Isacon" width={50} height={50} />
+            </a>
           </NavbarBrand>
         </NavbarContent>
         <NavbarContent className="hidden gap-16 md:flex" justify="center">

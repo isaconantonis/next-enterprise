@@ -51,7 +51,7 @@
     return (
     <div className='md:px-60 lg:px-72 xl:px-96 pt-10'>
       <div className='text-center px-2 sm:px-0'>
-        <h2 className='text-3xl font-bold tracking-tight text-primary-800 sm:text-4xl'>Looking for office space?<br/> we have you covered!</h2>
+        <h2 className='text-3xl font-bold tracking-tight text-primary-800 sm:text-4xl'>Looking for office space?<br/> We have you covered!</h2>
         <p className='mt-4 text-lg leading-8 text-primary-800'>Explore a practical coworking space in the heart of Antwerp's Kammenstraat. Our cozy office setup is designed for productivity, offering a limited number of spots. Secure your place in the city center and be part of a workspace that balances comfort and inspiration.</p>
       </div>
       <div className='mt-4 flex'>

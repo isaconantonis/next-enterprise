@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     siteName: "IsaCon",
     images: [
       {
-        url: "/Isacon logo RBG_1.png",
+        url: "/isaconFavicon.png",
       },
     ],
   },
